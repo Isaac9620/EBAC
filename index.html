@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./image/Spotify_23464.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Spotify-yellow</title>
+  </head>
+  <body>
+    <main>
+      <!--Seccion de la libreria del usuario-->
+
+      <section class="library">
+        <!--Inicio y buscar de la seccion de libreria-->
+        <div class="library__navigation">
+          <!--Inicio y Buscar-->
+          <div class="library__item">
+            <i class="library__icon library__icon--home">
+              <img
+                src="image/home.svg"
+                class="library__icon-image"
+                alt="Inicio"
+              />
+            </i>
+            <h1 class="library__title">Inicio</h1>
+          </div>
+          <div class="library__item">
+            <i class="library__icon library__icon--search">
+              <img
+                src="image/search.svg"
+                class="library__icon-image"
+                alt="Buscar"
+              />
+            </i>
+            <h1 class="library__title">Buscar</h1>
+          </div>
+        </div>
+        <!--Aqui termina-->
+
+        <!--Lista de musica-->
+        <div class="library__songs">
+          <!--Iconos de biblioteca, crear playlist y ver mas-->
+          <div class="library__icons">
+            <i class="library__icon library__icon--library">
+              <img
+                class="library__icon-library--image"
+                src="image/libreria.png"
+                alt="Biblioteca"
+              />
+              <h4 class="library__subtitle">Tu biblioteca</h4>
+            </i>
+            <div class="library__icons-options">
+              <i class="library__icon library__icon--new-playlist">
+                <img src="image/plus.svg" alt="Crear playlist" />
+              </i>
+              <i class="library__icon library__icon--more">
+                <img src="image/arrow_right.svg" alt="mostrar mas" />
+              </i>
+            </div>
+          </div>
+          <!--Aqui termina la seccion de los iconos-->
+
+          <!--Opciones de ver los artistas o bibliotecas-->
+          <div class="library__options">
+            <div class="library__option-button--close">
+              <button class="library__option-close">
+                <img
+                  src="image/close.svg"
+                  alt="close"
+                  class="library__option-icon"
+                />
+              </button>
+            </div>
+            <div class="library__option-button--artist">
+              <button class="library__option library__option--artist">
+                Artistas
+              </button>
+            </div>
+          </div>
+          <!--Aqui termina-->
+
+          <!--Iconos de buscar y orden alfabetico-->
+          <div class="library__playlist">
+            <div class="library__playlist-icons">
+              <i class="library__search-icon">
+                <img
+                  class="library__searcg-icon--image"
+                  src="image/search.svg"
+                  alt="Buscar"
+                />
+              </i>
+              <div class="library__sort">
+                <p class="library__sort-title">Orden alfabético</p>
+                <i class="library__sort-icon">
+                  <img
+                    class="library__sort-icon--image"
+                    src="image/sandwich.svg"
+                    alt="Orden Alfabético"
+                /></i>
+              </div>
+            </div>
+            <!--Aqui termina-->
+
+            <!--Lista de artistas-->
+            <nav class="library__nav">
+              <div class="library__artist">
+                <img
+                  src="https://i.scdn.co/image/ab67616d00004851a5952c0e2e649f588603b743"
+                  alt="Gorillaz"
+                  class="library__artist-image"
+                />
+                <p class="library__artist-name">Gorillaz</p>
+              </div>
+
+              <div class="library__artist">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000101f6fc940f2e99875ced9bafed0"
+                  alt="Kings of Leon"
+                  class="library__artist-image"
+                />
+                <p class="library__artist-name">Kings of Leon</p>
+              </div>
+
+              <div class="library__artist">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000101f744a4243fb6cc938011a98f4"
+                  alt="Bad Bunny"
+                  class="library__artist-image"
+                />
+                <p class="library__artist-name">Bad Bunny</p>
+              </div>
+
+              <div class="library__artist">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000101fa0881fe672e4e39f9ec0a9e0"
+                  alt="Rauw Alejandro"
+                  class="library__artist-image"
+                />
+                <p class="library__artist-name">Rauw Alejandro</p>
+              </div>
+
+              <div class="library__artist">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000101f7e2078873c8ccd9f968de1cf"
+                  alt="Natanael Cano"
+                  class="library__artist-image"
+                />
+                <p class="library__artist-name">Natanael Cano</p>
+              </div>
+              <!--Aqui termina la lista de los artistas-->
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!--Seccion de los artistas-->
+
+      <section class="artist">
+        <article class="artistbanner">
+          <header class="banner">
+            <div class="bannerheader">
+              <div class="headeruser-notify">
+                <i class="headeruser-action">
+                  <img
+                    class="headeruser-icon headeruser-icon--notify"
+                    src="img/bell_14808201 (1).png"
+                    alt="Notificaciones"
+                  />
+                </i>
+              </div>
+              <div class="headeruser-background">
+                <img
+                  class="headeruser-icon header__user-avatar"
+                  src="img/User_img.jpg"
+                  alt="Usuario"
+                />
+              </div>
+            </div>
+
+            <!--Contenido de artista coldplay Imagen-->
+            <div class="headerverify">
+              <i
+                ><img
+                  class="headerverify-icon"
+                  src="img/social-media_15050690.png"
+                  alt=""
+                />Artista verificado</i
+              >
+              <h1 class="headerverify-title">Coldplay</h1>
+            </div>
+            <!--Numero de oyentes-->
+            <div class="headerlisteners">
+              <p class="header__listeners-text">75.836.230 oyentes mensuales</p>
+            </div>
+
+            <ul class="artist__song-list">
+              <li class="artist__song-item">
+                <div class="artist__song-number">1</div>
+                <div class="artist__song-content">
+                  <div class="artist__song-image">
+                    <img
+                      class="artist__song-thumbnail"
+                      src="https://i.scdn.co/image/ab67616d00001e029164bafe9aaa168d93f4816a"
+                      alt="Yellow"
+                    />
+                  </div>
+                  <div class="artist__song-name">Yellow</div>
+                  <div class="artist__song-play">2.036.716.267</div>
+                  <div class="artist__song-duration">4:26</div>
+                </div>
+              </li>
+              <li class="artist__song-item">
+                <div class="artist__song-number">2</div>
+                <div class="artist__song-content">
+                  <div class="artist__song-image">
+                    <img
+                      class="artist__song-thumbnail"
+                      src="https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e"
+                      alt="Viva La Vida"
+                    />
+                  </div>
+                  <div class="artist__song-name">Viva La Vida</div>
+                  <div class="artist__song-play">1.857.812.466</div>
+                  <div class="artist__song-duration">4:02</div>
+                </div>
+              </li>
+              <li class="artist__song-item">
+                <div class="artist__song-number">3</div>
+                <div class="artist__song-content">
+                  <div class="artist__song-image">
+                    <img
+                      class="artist__song-thumbnail"
+                      src="https://i.scdn.co/image/ab67616d00001e020c13d3d5a503c84fcc60ae94"
+                      alt="Something Just Like This"
+                    />
+                  </div>
+                  <div class="artist__song-name">Something Just Like This</div>
+                  <div class="artist__song-play">2.388.451.672</div>
+                  <div class="artist__song-duration">4:07</div>
+                </div>
+              </li>
+              <li class="artist__song-item">
+                <div class="artist__song-number">4</div>
+                <div class="artist__song-content">
+                  <div class="artist__song-image">
+                    <img
+                      class="artist__song-thumbnail"
+                      src="https://i.scdn.co/image/ab67616d00001e02e5a95573f1b91234630fd2cf"
+                      alt="Sparks"
+                    />
+                  </div>
+                  <div class="artist__song-name">Sparks</div>
+                  <div class="artist__song-play">798.395.808</div>
+                  <div class="artist__song-duration">3:47</div>
+                </div>
+              </li>
+              <li class="artist__song-item">
+                <div class="artist__song-number">5</div>
+                <div class="artist__song-content">
+                  <div class="artist__song-image">
+                    <img
+                      class="artist__song-thumbnail"
+                      src="https://i.scdn.co/image/ab67616d00001e029164bafe9aaa168d93f4816a"
+                      alt="A Sky Full of Stars"
+                    />
+                  </div>
+                  <div class="artist__song-name">A Sky Full of Stars</div>
+                  <div class="artist__song-play">1.331.607.854</div>
+                  <div class="artist__song-duration">4:27</div>
+                </div>
+              </li>
+            </ul>
+          </header>
+          <aside>
+            <div><!--Imagen de la canción del artista--></div>
+            <div><!--Acerca del artista--></div>
+          </aside>
+        </article>
+      </section>
+
+      <section>
+        <footer>
+          <div><!--Imagen de la canción--></div>
+          <div><!--Acción de reproducir la canción--></div>
+          <div><!--Iconos de interacción con el usuario--></div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

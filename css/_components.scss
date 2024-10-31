@@ -1,0 +1,35 @@
+$colorBlack: #000;
+$colorWhite: #fff;
+$colorGray: #1f1f1f;
+
+@mixin display($displayOption, $justifyContent, $alignItems) {
+  display: $displayOption;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin backgroundDiv {
+  background-color: $colorGray;
+  border-radius: 10px;
+  margin: 2px 3px;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%no-wrap {
+  text-wrap: nowrap;
+}
+
+%rounded-border {
+  border-radius: 15px;
+  border: none;
+}
+
+%image-artist {
+  border-radius: 20px;
+  width: 49px;
+}

@@ -1,0 +1,168 @@
+@import "./base/_reset";
+@import "./components";
+@import "./base/topography";
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.library {
+  background-color: $colorBlack;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.library__navigation {
+  @include backgroundDiv;
+  @include display(block, center, center);
+  height: 68px;
+  padding: 8px 18px;
+  max-width: 100%;
+  width: 98.5%;
+  margin: 4px 2px 2px 2px;
+}
+
+.library__item {
+  @include display(flex, none, none);
+  gap: 10px;
+  margin-bottom: 7px;
+
+  .library__icon--search {
+    margin: auto 0;
+  }
+}
+
+.library__title {
+  font-size: 0.9rem;
+}
+
+.library__icon--home,
+.library__subtitle,
+.library__icons-options {
+  @extend %flex-center;
+}
+
+.library__icon-image {
+  width: 21px;
+}
+
+.library__songs {
+  background-color: $colorGray;
+  @include backgroundDiv;
+  height: 100%;
+  width: 98.5%;
+
+  .library__icons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .library__icon--library {
+      display: flex;
+    }
+
+    .library__icon {
+      width: 23px;
+    }
+
+    .library__subtitle {
+      color: $colorWhite;
+      font-size: 0.9rem;
+      @extend %no-wrap;
+      font-style: normal;
+    }
+  }
+
+  .library__icons-options {
+    padding-right: 5px;
+    gap: 3px;
+  }
+}
+
+.library__icon-library--image {
+  width: 45px;
+  height: auto;
+  object-fit: cover;
+  max-width: 46px;
+  max-height: 46px;
+}
+
+.library__options {
+  @include display(flex, none, center);
+  gap: 8px;
+
+  .library__option-button--close {
+    padding-left: 11px;
+
+    .library__option-close {
+      width: 30px;
+      height: 30px;
+      background-color: #3a3a3a;
+      @extend %rounded-border;
+      border: none;
+    }
+  }
+}
+
+.library__option-button--artist {
+  background-color: white;
+  border-radius: 14px;
+  height: 26px;
+  margin-bottom: 3px;
+}
+
+.library__option {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 0.9rem;
+  @include display(flex, none, center);
+}
+
+.library__searcg-icon--image {
+  width: 19px;
+  margin: 8px 17px;
+}
+
+.library__sort-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.library__sort-icon--image {
+  width: 20px;
+}
+
+.library__sort {
+  @include display(flex, flex-end, center);
+  width: 100%;
+  margin-right: 10px;
+  gap: 5px;
+}
+
+.library__playlist-icons {
+  width: 100%;
+  display: inline-flex;
+}
+
+.library__title,
+.library__subtitle,
+.library__sort-title {
+  color: $colorWhite;
+}
+
+.library__nav {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .library__artist {
+    display: flex;
+    align-items: center;
+
+    .library__artist-image {
+      @extend %image-artist;
+    }
+  }
+}

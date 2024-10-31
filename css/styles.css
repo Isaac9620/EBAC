@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.library__icon--home,
+.library__subtitle,
+.library__icons-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.library__songs .library__icons .library__subtitle {
+  text-wrap: nowrap;
+}
+
+.library__options .library__option-button--close .library__option-close {
+  border-radius: 15px;
+  border: none;
+}
+
+.library__nav .library__artist .library__artist-image {
+  border-radius: 20px;
+  width: 49px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.library {
+  background-color: #000;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.library__navigation {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  margin: 2px 3px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  padding: 8px 18px;
+  max-width: 100%;
+  width: 98.5%;
+  margin: 4px 2px 2px 2px;
+}
+
+.library__item {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+.library__item .library__icon--search {
+  margin: auto 0;
+}
+
+.library__title {
+  font-size: 0.9rem;
+}
+
+.library__icon-image {
+  width: 21px;
+}
+
+.library__songs {
+  background-color: #1f1f1f;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  margin: 2px 3px;
+  height: 100%;
+  width: 98.5%;
+}
+.library__songs .library__icons {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.library__songs .library__icons .library__icon--library {
+  display: flex;
+}
+.library__songs .library__icons .library__icon {
+  width: 23px;
+}
+.library__songs .library__icons .library__subtitle {
+  color: #fff;
+  font-size: 0.9rem;
+  font-style: normal;
+}
+.library__songs .library__icons-options {
+  padding-right: 5px;
+  gap: 3px;
+}
+
+.library__icon-library--image {
+  width: 45px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 46px;
+  max-height: 46px;
+}
+
+.library__options {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  gap: 8px;
+}
+.library__options .library__option-button--close {
+  padding-left: 11px;
+}
+.library__options .library__option-button--close .library__option-close {
+  width: 30px;
+  height: 30px;
+  background-color: #3a3a3a;
+  border: none;
+}
+
+.library__option-button--artist {
+  background-color: white;
+  border-radius: 14px;
+  height: 26px;
+  margin-bottom: 3px;
+}
+
+.library__option {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+}
+
+.library__searcg-icon--image {
+  width: 19px;
+  margin: 8px 17px;
+}
+
+.library__sort-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.library__sort-icon--image {
+  width: 20px;
+}
+
+.library__sort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 10px;
+  gap: 5px;
+}
+
+.library__playlist-icons {
+  width: 100%;
+  display: inline-flex;
+}
+
+.library__title,
+.library__subtitle,
+.library__sort-title {
+  color: #fff;
+}
+
+.library__nav {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.library__nav .library__artist {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
